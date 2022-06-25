@@ -1,0 +1,6 @@
+{% for message in messages %}
+{# data-turbo-cache="false" will tell Turbo to not cache the element #}
+<div data-turbo-cache="false" class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+{{ message|safe }}
+</div>
+{% endfor %}
