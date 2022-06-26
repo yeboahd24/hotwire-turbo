@@ -1,0 +1,7 @@
+<a class="btn-blue mr-3" href="{% url 'turbo-frame:task-update' instance.pk %}">
+Edit
+</a>
+<a class="btn-red mr-3" href="{% url 'turbo-frame:task-delete' instance.pk %}">
+Delete
+</a>
+{{ instance.due_date }}: {{ instance.title }}

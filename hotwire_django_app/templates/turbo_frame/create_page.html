@@ -1,0 +1,12 @@
+{% extends "turbo_frame/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="w-full max-w-7xl mx-auto px-4">
+<h1 class="text-4xl sm:text-6xl lg:text-7xl mb-6">Create Task</h1>
+<form method="post">
+{% csrf_token %}
+{{ form|crispy }}
+<button type="submit" class="btn-blue" value="Submit">Submit</button>
+</form>
+</div>
+{% endblock %}

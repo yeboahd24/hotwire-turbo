@@ -1,5 +1,6 @@
 // This is the scss entry file
 import "../styles/turbo_drive.scss";
+import "../styles/turbo_frame.scss";
 import "@hotwired/turbo";
 // update
 window.document.addEventListener("DOMContentLoaded", function() {

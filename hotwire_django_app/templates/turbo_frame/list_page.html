@@ -1,0 +1,15 @@
+{% extends "turbo_frame/base.html" %}
+{% block content %}
+<div class="w-full max-w-7xl mx-auto px-4">
+	<h1 class="text-4xl sm:text-6xl lg:text-7xl mb-6">Task List</h1>
+<div class="md:w-2/3 bg-white rounded-lg border mb-4">
+<ul class="divide-y-2 divide-gray-100" id="task-list-ul">
+{% for instance in object_list %}
+<li class="p-3 flex items-center">
+{% include 'turbo_frame/task_detail.html' with instance=instance only %}
+</li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endblock %}

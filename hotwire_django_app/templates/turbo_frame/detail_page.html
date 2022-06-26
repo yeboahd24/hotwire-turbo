@@ -1,0 +1,13 @@
+{% extends "turbo_frame/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="w-full max-w-7xl mx-auto px-4">
+<h1 class="text-4xl sm:text-6xl lg:text-7xl mb-6">Task Detail</h1>
+<div class="mb-3 p-3 border">
+{% include 'turbo_frame/task_detail.html' with instance=instance only %}
+</div>
+<div>
+<a href="{% url 'turbo-frame:task-list'%}" class="btn-blue">Go to list</a>
+</div>
+</div>
+{% endblock %}
