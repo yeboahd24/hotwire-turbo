@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "hotwire_django_app.tasks",
     "hotwire_django_app.turbo_drive",
     "hotwire_django_app.turbo_frame",
+    "hotwire_django_app.stimulus_basic",
     "crispy_forms",
     "crispy_tailwind",
 ]

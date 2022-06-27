@@ -1,0 +1,15 @@
+{% load webpack_loader static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% stylesheet_pack 'stimulus_basic' attrs='data-turbo-track="reload"'%}
+{% javascript_pack 'stimulus_basic' attrs='data-turbo-track="reload" defer' %}
+</head>
+<body>
+{% include 'stimulus_basic/navbar.html' %}
+{% block content %}
+{% endblock content %}
+</body>
+</html>
